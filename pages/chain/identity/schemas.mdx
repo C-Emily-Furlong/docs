@@ -98,6 +98,27 @@ Used to identify the reward amount each approved project received in a Retro Fun
 | round         | The retro round for which the project was rewarded                                                                           |
 | OPamount      | The amount of OP awarded to the project                                                                                      |
 
+## Schemas related to Token House grants
+
+### [Token House Grant Approved](https://optimism.easscan.org/schema/view/0x8aef6b9adab6252367588ad337f304da1c060cc3190f01d7b72c7e512b9bfb38)
+
+Issued by the Grants Council when a project is approved for a grant. Does not indicate that the grant has been completed.
+
+| Schema UID    | `0x8aef6b9adab6252367588ad337f304da1c060cc3190f01d7b72c7e512b9bfb38`                                                       |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Issuer        | Currently issued by the Grants Council lead.                                                                               |
+| Recipient     | The address where the tokens will be delivered once the grant has been completed.                                          |
+| refUID        | Currently null                                                                                                             |
+| projectRefUID | The unique identifier of the project that was approved for the grant.                                                      |
+| UserIncentivesOP| The OP amount approved for user incentives.                                                                              |
+| BuildersOP    | The OP amount approved for the builder.                                                                                    |
+| Season        | The season (number) in which the grant was approved                                                                        |
+| Intent        | The intent (number) to which the mission belongs                                                                           |
+| Mission       | The name of the mission (in words) under which this grant was made.                                                        |
+| Approval date | The date the grant was approved, in the following format MM/DD/YYYY                                                        |
+| MetadataUrl   | Currently null                                                                                                             |
+
+
 ## Schemas related to roles and contributions
 
 ### [Citizens](https://optimism.easscan.org/schema/view/0xc35634c4ca8a54dce0a2af61a9a9a5a3067398cb3916b133238c4f6ba721bc8a)
